@@ -9,3 +9,9 @@
 
 // 在头文件中引入hyw()函数
 int hyw();
+
+void scanIO();
+
+void myPrintf();
+
+void myScanf();
