@@ -3,7 +3,7 @@
 # include "/opt/huabingood/practise/algorithm/CPractise/CPractise.h"
 
 
-void main(){
+void main() {
     // scanIO();
     // myPrintf();
     myScanf();
