@@ -43,6 +43,7 @@ void myPrintf() {
 void myScanf() {
     // 必须紧挨着才能被识别，空格或其他的输入符号会被作为一个输入符号而识别
     char a, b, c;
+    int e,f,g;
     // scanf("%c%c%c",&a,&b,&c);
     // printf("you write is %c,%c,%c.",a,b,c);
 
@@ -51,6 +52,38 @@ void myScanf() {
     // printf("you write is %c,%c,%c.\n",a,b,c);
 
     // use the comma to split the input
-    scanf("%c,%c,%c", &a, &b, &c);
-    printf("you write is %c,%c,%c.\n", a, b, c);
+    // scanf("%c,%c,%c", &a, &b, &c);
+    // printf("you write is %c,%c,%c.\n", a, b, c);
+
+    // use %*[域宽]格式化符号 to ignore some inputs.
+    // 必须使用%*的形式才有效，*%的输入是无效的方式。
+    // scanf();    // this is not use!
+    // printf("please input:\n");
+    // scanf("%c%*2c%c%c",&a,&b,&c);
+    // printf("in here.");
+    // printf("you wirite were %c,%c,%c\n",a,b,c);
+
+    // the seperate symbol is odd;
+    // scanf("a = %c,love=%c",&a,&b);   // should use the "a = " and the ",love="as the symbol to ssplite the users input.
+    // printf("%c,%c",a,b);
+    // scanf("%c",&a);
+    // a = getchar();
+    // printf("you first input is %c.",a);
+    // scanf(" %c",&b);
+    // b = getchar();
+    // printf("you seconde input is %c",b);
+    // scanf(" %c",&c);
+    // c = getchar();
+    // printf("you last input is %c",c);
+
+    // 通过判断输入的字符的个数，来间接判断输入的字符是否合法
+    // scanf() 输入的格式如果跟指定的格式不符合，就会返回0或者-1。我们通过长度即可判断中间有无异常
+    int res = scanf("%d%d%d",&e,&f,&g);   // 获取结果
+    if(res != 3 ){
+        printf("you must give the number!\n");
+    }else{
+        printf("the first is %d,the middle is %d,the last is %d.",e,f,g);
+    }
+    fflush(stdin); // 将缓存中的内容清空。
+
 }
