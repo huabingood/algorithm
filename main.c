@@ -1,20 +1,33 @@
 # include <stdio.h>
 // 引入hyw()所在的头文件
 # include "/opt/huabingood/practise/algorithm/CPractise/CPractise.h"
+#include "algorithm/introduction/introduction.h"
 # include <math.h>
-
 
 # define PI 3.14159
 # define r 5.3
 
+
+// this is alograthm introduction
+void main() {
+
+    // mathod2();
+    // mathod1();
+}
+
+
+
+
+/*
 void main() {
     //reverseNumber();
     // score();
     // rate();
     // mySplit();
     // heighCalculate();
-    squareRoot();
+    //squareRoot();
 }
+*/
 
 
 

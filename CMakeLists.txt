@@ -17,7 +17,7 @@ LINK_LIBRARIES(m)   # 数学库的libm.so简写成就是m
 set(CPractiseFiles CPractise/BasicDataStructureTypePractise.c CPractise/CPractise.h CPractise/ControlStructure.c)
 
 # 这个是设置algorithm文件夹下introduction中的所有文件
-set(introduction algorithm/introduction/maxSubsequenceResult.c)
+set(introduction algorithm/introduction/maxSubsequenceResult.c algorithm/introduction/introduction.h)
 
 set(SOURCE_FILES main.c ${CPractiseFiles} ${introduction})
 
