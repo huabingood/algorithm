@@ -15,3 +15,21 @@ void scanIO();
 void myPrintf();
 
 void myScanf();
+
+void myLoop();
+
+void typeTransform();
+
+void homeWork1();
+
+void reverseNumber();
+
+void score();
+
+void rate();
+
+void mySplit();
+
+void heighCalculate();
+
+void squareRoot();
