@@ -61,3 +61,4 @@ void mathod2() {
     }
     printf("%d\n", maxSum);
 }
+
