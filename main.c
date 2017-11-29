@@ -9,6 +9,148 @@
 
 
 // this is alograthm introduction
+
+
+int main() {
+    const double rate1 = 0.0225;
+    const double rate2 = 0.0243;
+    const double rate3 = 0.0270;
+    const double rate5 = 0.0288;
+    const double rate8 = 0.0300;
+
+    double capital, deposit;
+    int n;
+    char choose;
+
+    printf("Input capital, year:");
+    scanf("%lf,%d", &capital, &n);
+    printf("Compound interest (Y/N)?");
+    scanf(" %c", &choose);
+
+    switch (n) {
+        case 1:
+            if (choose == 'y' || choose == 'Y') {
+                deposit = capital * pow((1 + rate1), n);
+            } else if (choose == 'n' || choose == 'N') {
+                deposit = capital * (1 + rate1 * n);
+            } else {
+                printf("You input are wrong!");
+            }
+            printf("rate = %.4f, deposit = %.4f\n", rate1, deposit);
+            break;
+        case 2:
+            if (choose == 'y' || choose == 'Y') {
+                deposit = capital * pow((1 + rate2), n);
+            } else if (choose == 'n' || choose == 'N') {
+                deposit = capital * (1 + rate2 * n);
+            } else {
+                printf("You input are wrong!");
+            }
+            printf("rate = %.4f, deposit = %.4f\n", rate2, deposit);
+            break;
+        case 3:
+            if (choose == 'y' || choose == 'Y') {
+                deposit = capital * pow((1 + rate3), n);
+            } else if (choose == 'n' || choose == 'N') {
+                deposit = capital * (1 + rate3 * n);
+            } else {
+                printf("You input are wrong!");
+            }
+            printf("rate = %.4f, deposit = %.4f\n", rate3, deposit);
+            break;
+        case 5:
+            if (choose == 'y' || choose == 'Y') {
+                deposit = capital * pow((1 + rate5), n);
+            } else if (choose == 'n' || choose == 'N') {
+                deposit = capital * (1 + rate5 * n);
+            } else {
+                printf("You input are wrong!");
+            }
+            printf("rate = %.4f, deposit = %.4f\n", rate5, deposit);
+            break;
+        case 8:
+            if (choose == 'y' || choose == 'Y') {
+                deposit = capital * pow((1 + rate8), n);
+            } else if (choose == 'n' || choose == 'N') {
+                deposit = capital * (1 + rate8 * n);
+            } else {
+                printf("You input are wrong!");
+            }
+            printf("rate = %.4f, deposit = %.4f\n", rate8, deposit);
+            break;
+        default:
+            printf("Error year!");
+    }
+
+}
+
+/*# nclude <math.h>
+int main(){
+    double rate,capital,deposite;
+    int n;
+    char choose;
+
+    printf("Input rate, year, capital:");
+    scanf("%lf,%d,%lf",&rate,&n,&capital);
+    printf("Compound interest (Y/N)?" );
+    scanf(" %c",&choose);
+
+    if(choose == 'Y' || choose == 'y'){
+        deposite = capital*pow((1+rate),n);
+    }else if (choose == 'N' || choose == 'n'){
+        deposite = capital * (1+rate*n );
+    }else{
+        printf("You choose are wrong!");
+    }
+    printf("deposit = %.4f\n",deposite);
+}*/
+
+
+
+/*// 对输入的数字进行手工的通分
+int main(){
+    int a,b,c,d;
+    printf("Input a/b, c/d:");
+    scanf("%d/%d,%d/%d",&a,&b,&c,&d);
+
+    if(a*d>c*b){
+        printf("%d/%d>%d/%d\n",a,b,c,d);
+    } else if (a*d<c*b){
+        printf("%d/%d<%d/%d\n",a,b,c,d);
+    } else {
+        printf("%d/%d=%d/%d\n",a,b,c,d);
+    }
+    return 0;
+}*/
+
+
+/*int main()
+{
+    int a=1,b=2,m=0,n=0,k;
+    // 因为b>a为真，所以n是1；a<b为真，所以m是1
+    k=(n=b>a)||(m=a<b);
+    // 注意上面一条命令是短路或，所有(m=a<b根本就没有执行)
+    printf("%d,%d\n",k,m);
+    return 0;
+}*/
+
+
+/*
+int main()
+{ int a,b,c;
+    a=10;
+    b=20;
+    c=(a%b<1)||(a/b>1);
+    printf("%d,%d,%d",a%b,a/b,c);
+    return 0;
+}
+*/
+
+
+
+
+
+/*
 #include <stdlib.h>
 
 int main() {
@@ -28,6 +170,7 @@ int main() {
     printf("%d hour %d second\n", hour3, second3);
 
 }
+*/
 
 
 
