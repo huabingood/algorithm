@@ -12,6 +12,23 @@
 
 
 int main() {
+    float compete, standard, middleA, middleB;
+    printf("Input percent of A and B:");
+    scanf("%f%f", &compete, &standard);
+
+    middleA = compete + standard * 0.6;
+    middleB = compete * 0.8 + standard;
+
+    printf("compete = %.4f\nstandard = %.4f\n", middleA * 10, middleB * 10);
+
+    if ((middleA - middleB) >= 0.00002) {
+        printf("The Best Response is compete!");
+    } else {
+        printf("The Best Response is standard!");
+    }
+}
+
+/*int main() {
     const double rate1 = 0.0225;
     const double rate2 = 0.0243;
     const double rate3 = 0.0270;
@@ -82,7 +99,7 @@ int main() {
             printf("Error year!");
     }
 
-}
+}*/
 
 /*# nclude <math.h>
 int main(){
