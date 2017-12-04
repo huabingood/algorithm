@@ -10,8 +10,45 @@
 
 // this is alograthm introduction
 
-
 int main() {
+    unsigned int four, six;
+    short a4, b4, c4, d4, a6, b6, c6, d6, e6, f6;
+    for (int i = 10; i <= 22; i++) {
+        four = pow(i, 3);
+        six = pow(i, 6);
+
+        a4 = four / 1000;
+        b4 = (four % 1000) / 100;
+        c4 = ((four % 1000) % 100) / 10;
+        d4 = four % 10;
+
+        a6 = six / 100000;
+        b6 = (six % 100000) / 10000;
+        c6 = ()
+
+    }
+}
+
+/*int main() {
+    int x = 0, y = 0, z = 0;
+
+    printf("Man   Women   Children\n");
+
+    // 控制男人的数量
+    for (x=0; x < 17; x++) {
+        // 控制女人的数量
+        for (y=0; y < 25; y++) {
+            z = 30 - x - y;
+            if (50 == 3 * x + 2 * y + z) {
+                printf("%3d%8d%8d\n", x, y, z);
+            }
+        }
+    }
+}*/
+
+
+
+/*int main() {
     float compete, standard, middleA, middleB;
     printf("Input percent of A and B:");
     scanf("%f%f", &compete, &standard);
@@ -26,7 +63,7 @@ int main() {
     } else {
         printf("The Best Response is standard!");
     }
-}
+}*/
 
 /*int main() {
     const double rate1 = 0.0225;
