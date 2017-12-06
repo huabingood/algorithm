@@ -23,13 +23,16 @@
 int main() {
     // 调用猜年龄的函数
     // guessAge();
-    leapYear();
+    // leapYear();
+    leapYearPlus();
 
 
 }
 
+
+
 /*int main() {
-    const double rate1 = 0.0225;
+    const double rate1 = 0.0225;K
     const double rate2 = 0.0243;
     const double rate3 = 0.0270;
     const double rate5 = 0.0288;

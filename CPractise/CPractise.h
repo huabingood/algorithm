@@ -38,3 +38,5 @@ void guessAge();
 
 
 void leapYear();
+
+void leapYearPlus();
