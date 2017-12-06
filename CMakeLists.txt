@@ -14,7 +14,7 @@ LINK_LIBRARIES(m)   # 数学库的libm.so简写成就是m
 
 # 设置变量，防止编译是引用的文件过长
 # 这个设置CPractise这个文件夹中的所有文件
-set(CPractiseFiles CPractise/BasicDataStructureTypePractise.c CPractise/CPractise.h CPractise/ControlStructure.c CPractise/PointerAndSource.c)
+set(CPractiseFiles CPractise/BasicDataStructureTypePractise.c CPractise/CPractise.h CPractise/ControlStructure.c CPractise/PointerAndSource.c CPractise/GuessAge.c)
 
 # 这个是设置algorithm文件夹下introduction中的所有文件
 set(introduction algorithm/introduction/maxSubsequenceResult.c algorithm/introduction/introduction.h)

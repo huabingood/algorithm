@@ -3,6 +3,7 @@
 # include "/opt/huabingood/practise/algorithm/CPractise/CPractise.h"
 #include "algorithm/introduction/introduction.h"
 # include <math.h>
+#include <stdlib.h>
 
 # define PI 3.14159
 # define r 5.3
@@ -10,60 +11,21 @@
 
 // this is alograthm introduction
 
+// 猜神童年龄
+/*美国数学家维纳（N.Wiener）智力早熟，11岁就上了大学。他曾在1935~1936年应邀来中国清华大学讲学。一次，他参加某个重要会议，年轻的脸孔引人注目。于是有人询问他的年龄，他回答说：“我年龄的立方是一个4位数。我年龄的4次方是一个6位数。这
+10个数字正好包含了从0到9这10个数字，每个都恰好出现1次。”请你编程算出他当时到底有多年轻。
+【解题思路】：因为已知年龄的立方是一个4位数字，所以可以推断年龄的范围在10到22之间，因此确定穷举范围为10到22。如果年龄还满足“年龄的4次方是一个6位数”这个条件，则先计算年龄的立方值的每一位数字，从低位到高位分别保存到变量b1,b2,b3,b4
+中，再计算年龄的4次方值的每一位数字，从低位到高位分别保存到变量a1,a2,a3,a4,a5,a6中。如果上述10个数字互不相同，则必定是包含了从0到9这10个数字并且每个都恰好出现1次，因此只要判断上述10个数字互不相同，即可确定这个年龄值为所求。
+
+输出格式："age=%d\n"*/
+
+
 int main() {
-    unsigned int four, six;
-    short a4, b4, c4, d4, a6, b6, c6, d6, e6, f6;
-    for (int i = 10; i <= 22; i++) {
-        four = pow(i, 3);
-        six = pow(i, 6);
+    // 调用猜年龄的函数
+    guessAge();
 
-        a4 = four / 1000;
-        b4 = (four % 1000) / 100;
-        c4 = ((four % 1000) % 100) / 10;
-        d4 = four % 10;
 
-        a6 = six / 100000;
-        b6 = (six % 100000) / 10000;
-        c6 = ()
-
-    }
 }
-
-/*int main() {
-    int x = 0, y = 0, z = 0;
-
-    printf("Man   Women   Children\n");
-
-    // 控制男人的数量
-    for (x=0; x < 17; x++) {
-        // 控制女人的数量
-        for (y=0; y < 25; y++) {
-            z = 30 - x - y;
-            if (50 == 3 * x + 2 * y + z) {
-                printf("%3d%8d%8d\n", x, y, z);
-            }
-        }
-    }
-}*/
-
-
-
-/*int main() {
-    float compete, standard, middleA, middleB;
-    printf("Input percent of A and B:");
-    scanf("%f%f", &compete, &standard);
-
-    middleA = compete + standard * 0.6;
-    middleB = compete * 0.8 + standard;
-
-    printf("compete = %.4f\nstandard = %.4f\n", middleA * 10, middleB * 10);
-
-    if ((middleA - middleB) >= 0.00002) {
-        printf("The Best Response is compete!");
-    } else {
-        printf("The Best Response is standard!");
-    }
-}*/
 
 /*int main() {
     const double rate1 = 0.0225;

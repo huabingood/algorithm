@@ -33,3 +33,5 @@ void mySplit();
 void heighCalculate();
 
 void squareRoot();
+
+void guessAge();
