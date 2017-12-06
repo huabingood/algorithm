@@ -22,7 +22,8 @@
 
 int main() {
     // 调用猜年龄的函数
-    guessAge();
+    // guessAge();
+    leapYear();
 
 
 }

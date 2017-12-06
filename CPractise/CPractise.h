@@ -35,3 +35,6 @@ void heighCalculate();
 void squareRoot();
 
 void guessAge();
+
+
+void leapYear();
