@@ -57,7 +57,7 @@ void guessAge() {
                 }
             }
 
-            if (flag != -1) {
+            if (flag != -1 && i == 9) {
                 printf("age=%d\n", age);
                 flag = -1;
                 break;
