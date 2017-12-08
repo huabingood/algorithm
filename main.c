@@ -20,14 +20,40 @@
 输出格式："age=%d\n"*/
 
 
-int main() {
+/*int main() {
     // 调用猜年龄的函数
     // guessAge();
     // leapYear();
     leapYearPlus();
 
 
+}*/
+
+
+int main() {
+    int i;
+
+    for (i = 0; i < 3; i++)
+
+        switch (i) {
+
+            case 0:
+                printf("%d", i);
+
+            case 2:
+                printf("%d", i);
+
+            default:
+                printf("%d", i);
+
+        }
+
+    return 0;
+
 }
+
+
+
 
 
 
