@@ -2,6 +2,7 @@
 // 引入hyw()所在的头文件
 # include "/opt/huabingood/practise/algorithm/CPractise/CPractise.h"
 #include "algorithm/introduction/introduction.h"
+#include "MyArray/MyArray.h"
 # include <math.h>
 #include <stdlib.h>
 
@@ -31,7 +32,8 @@
 
 
 int main() {
-    rubbitOfFibonacci();
+    // rubbitOfFibonacci();
+    mySort();
 }
 
 

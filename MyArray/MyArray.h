@@ -10,3 +10,7 @@
 
 void rubbitOfFibonacci();
 
+// MySort.c中的方法
+void mySort();
+void myExchang(short myScore[],short myStudents);
+
