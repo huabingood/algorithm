@@ -42,7 +42,8 @@ void mySort(){
     }
 
     // 调用函数进行排序
-    myExchang(myScore,myStudents);
+    //myExchang(myScore,myStudents);
+    selectSort(myScore,myStudents);
 
     // 输出内容
     printf("学生的分数降序为：\n");
@@ -63,6 +64,29 @@ void myExchang(short myScore[],short myStudents){
                 myScore[i] = myScore[j];
                 myScore[j] = middle;
             }
+        }
+
+    }
+}
+
+/*选择排序
+ * 就是将最大值的下标一直拿着，然后再和第一个替换。
+ * 其实这里的循环次数没有变换，仅仅是省掉内层for循环的交换过程
+ * */
+void selectSort(short myScore[],short myStudents){
+    short middleIndex = 0;
+    short middleValue = 0;
+    for(int i=0;i<myStudents;i++){
+        for(int j=i+1;j<myStudents;j++){
+            if(myScore[i]<myScore[j]){
+                middleIndex=j;  // 获取最大值的索引
+            }
+        }
+        // 在内层循环外实现交换
+        if(middleIndex != i){
+            middleValue = myScore[i];
+            myScore[i]=myScore[middleIndex];
+            myScore[middleIndex]=middleValue;
         }
     }
 }
