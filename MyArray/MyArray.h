@@ -14,3 +14,5 @@ void rubbitOfFibonacci();
 void mySort();
 void myExchang(short myScore[],short myStudents);
 void selectSort(short myScore[],short myStudents);
+
+void MaxAndMinScore();
