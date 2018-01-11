@@ -16,3 +16,7 @@ void myExchang(short myScore[],short myStudents);
 void selectSort(short myScore[],short myStudents);
 
 void MaxAndMinScore();
+
+
+// FindFromArray.c中的方法
+void findFromArray();

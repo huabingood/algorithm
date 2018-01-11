@@ -33,9 +33,10 @@
 
 int main() {
     // rubbitOfFibonacci();
-    MaxAndMinScore();
+    // MaxAndMinScore();
     // rubbitOfFibonacci();
-    mySort();
+    // mySort();
+    findFromArray();
 }
 
 

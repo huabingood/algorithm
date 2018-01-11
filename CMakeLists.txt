@@ -35,7 +35,7 @@ set(chapter1 algorithm/chapter1/chapter1.h algorithm/chapter1/ChickenAndRubbites
 ####################################
 
 # 这个是关于数组练习的所有内容
-set(MyArray MyArray/MyArray.h MyArray/RubbitesOfFibonacci.c MyArray/MaxAndMinScore.c MyArray/MySort.c)
+set(MyArray MyArray/MyArray.h MyArray/RubbitesOfFibonacci.c MyArray/MaxAndMinScore.c MyArray/MySort.c MyArray/FindeFromArray.c)
 
 # 这个是编译上面两个分的CPractise 和 introduction 的
 set(SOURCE_FILES main.c ${CPractiseFiles} ${introduction} ${chapter1} ${MyArray})
