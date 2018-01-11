@@ -71,7 +71,7 @@ void myPrint1(short num,short score[][COURSE]){
     printf("学号\t数学\t英语\t物理\t总分\t平均分\t>90\n");
     for(int i = 0;i<num;i++){
         int sum =0;
-        float avg=0.0f;
+        float avg=0;
         char c = 'Y';
 
         for(int j = 0;j<COURSE;j++){
