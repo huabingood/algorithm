@@ -37,26 +37,33 @@ void findFromArray() {
     // 输入学生的学号和成绩,不对学号成绩进行判断
     short controlFlag = 0;
     while (controlFlag < students) {
-        printf("输入第%d个学生的学号和成绩，中间使用空格分割\n", controlFlag);
-        scanf("%d%d", &allStudents[controlFlag], &studentsNum[controlFlag]);
+        printf("输入第%d个学生的学号和成绩，中间使用空格分割:\n", controlFlag+1);
+        scanf("%d%d", &studentsNum[controlFlag],&allStudents[controlFlag]);
         controlFlag++;
     }
 
-
+    // 调用函数进行二分查找
+    int result = binSearch(students-1,allStudents,4);
+    printf("学生的学号是：%d,学生的成绩%d.",studentsNum[result],allStudents[result]);
 }
 
 /*
  * 折半查找
  * 默认输入的成绩已经是排好序的
  * */
-int binSearch(int len, short allStudents[]) {
-    if (len % 2 == 0) {
-        short flag = 0;
-        short middle = 0;
-        while (flag < 1) {
-            middle = len / 2 - 1;
-        }
-    } else {
+int binSearch(int right, short allStudents[],int score) {
+    int left = 0;
+    int middle =0;   // 只能在一定程度上防止溢出，且假设全部都是正数的基础上
 
+    while(left<right){
+        middle=left-(left-right)/2;
+        if(allStudents[middle]<score){
+            left = middle+1;
+        }else if(allStudents[middle]>score){
+            right = middle-1;
+        }else{
+            return middle;
+        }
     }
+    return -1;
 }
