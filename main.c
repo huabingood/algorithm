@@ -36,7 +36,9 @@ int main() {
     // MaxAndMinScore();
     // rubbitOfFibonacci();
     // mySort();
-    findFromArray();
+    // findFromArray();
+    twoDimensionalArray();
+
 }
 
 

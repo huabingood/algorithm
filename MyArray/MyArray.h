@@ -20,3 +20,7 @@ void MaxAndMinScore();
 
 // FindFromArray.c中的方法
 void findFromArray();
+
+
+// TwoDimensional.c中的方法
+void twoDimensionalArray();
